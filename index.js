@@ -9,11 +9,11 @@ app.listen(port, () => {
 
 app.get("/", (req, res) => {
     res.send("Hello World!");
-  });
+});
   
 app.get("/toto", (req, res) => {
       res.send("Hello toto");
-  });
+});
 
   
 const cats = [
@@ -28,7 +28,7 @@ const cats = [
     { id: 9, name: "Jeromine", color: "blanc"  },
     { id: 10, name: "Anne", color: "noir"  },
     { id: 11, name: "Sophie", color: "blanc"  },
-    { id: 10, name: "Adeline", color: "gris"  },
+    { id: 12, name: "Adeline", color: "gris"  },
   ];
   
   app.get("/cats", (req, res) => {
