@@ -35,11 +35,9 @@ const cats = [
     console.log(req.query);
     let result = cats.slice();
 
-    // Ajout limite
     const limit = parseInt(req.query.limit) || 10;
     result = result.slice(0, limit);
 
-    // Ajout filtre
     if (req.query.color) {
         result = result.filter(cat => cat.color === req.query.color);
     }
